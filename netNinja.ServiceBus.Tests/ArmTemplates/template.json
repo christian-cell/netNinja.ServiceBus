@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "type": "Microsoft.ServiceBus/namespaces",
+      "apiVersion": "2018-01-01-preview",
+      "name": "[parameters('serviceBusNamespaceName')]",
+      "location": "[parameters('location')]",
+      "sku": {
+        "name": "[parameters('skuName')]",
+        "tier": "[parameters('skuTier')]"
+      },
+      "properties": {
+        "zoneRedundant": false
+      }
+    },
+    {
+      "type": "Microsoft.ServiceBus/namespaces/queues",
+      "apiVersion": "2018-01-01-preview",
+      "name": "[concat(parameters('serviceBusNamespaceName'), '/', parameters('queueName'))]",
+      "dependsOn": [
+        "[resourceId('Microsoft.ServiceBus/namespaces', parameters('serviceBusNamespaceName'))]"
+      ],
+      "properties": {
+        "enablePartitioning": true
+      }
+    }
+  ],
+  "parameters": {
+    "serviceBusNamespaceName": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "skuName": {
+      "type": "string",
+      "defaultValue": "Standard"
+    },
+    "skuTier": {
+      "type": "string",
+      "defaultValue": "Standard"
+    },
+    "queueName": {
+      "type": "string"
+    }
+  }
+}
