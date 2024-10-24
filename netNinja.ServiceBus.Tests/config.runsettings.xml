@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+
+    <!--Create with ARM templates and replace the values for test-->
+    <TestRunParameters>
+        <Parameter name="" value="" />
+        <Parameter name="" value="" />
+    </TestRunParameters>
+
+</RunSettings>

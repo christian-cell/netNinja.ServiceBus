@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "netNinja.ServiceBus", "netNinja.ServiceBus\netNinja.ServiceBus.csproj", "{C8ABA1F2-1B72-4669-9C70-3D28B9464FB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "netNinja.ServiceBus.Tests", "netNinja.ServiceBus.Tests\netNinja.ServiceBus.Tests.csproj", "{C971F80F-083F-4C7D-8AC6-5238F436457A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8ABA1F2-1B72-4669-9C70-3D28B9464FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8ABA1F2-1B72-4669-9C70-3D28B9464FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8ABA1F2-1B72-4669-9C70-3D28B9464FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8ABA1F2-1B72-4669-9C70-3D28B9464FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C971F80F-083F-4C7D-8AC6-5238F436457A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C971F80F-083F-4C7D-8AC6-5238F436457A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C971F80F-083F-4C7D-8AC6-5238F436457A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C971F80F-083F-4C7D-8AC6-5238F436457A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>netNinja.ServiceBus</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Christian García Martín</Authors>
+        <Description>ServiceBus event sender</Description>
+        <RepositoryUrl>https://github.com/tu-repositorio</RepositoryUrl>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.18.2" />
+    </ItemGroup>
+
+</Project>
+
